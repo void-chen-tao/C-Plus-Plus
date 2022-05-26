@@ -5,8 +5,19 @@
 
 using namespace std;
 
+class Test
+{
+	const int a = 100; 
+};
+
 int main()
 {
-	cout << "Hello CMake." << endl;
+	// Test t1[3] = {
+	// 	Test(1),
+	// 	Test(2),
+	// 	Test(3),
+	// };
+	Test b;
+
 	return 0;
 }
