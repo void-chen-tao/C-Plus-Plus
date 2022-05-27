@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "F:/vscode_MinGW/bin/g++.exe"
 		},
 		{
@@ -299,10 +299,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "F:/vscode_MinGW/bin/gcc.exe"
 		},
 		{
@@ -1292,6 +1292,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "Z:/c_code/C++/C++primer plus/chapter13/Cpp_Class"
+		},
+		{
+			"name" : "stack-demo_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "Z:/c_code/C++/C++primer plus/chapter13/Cpp_Class/build/use_class"
+		},
+		{
+			"name" : "stack-demo_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "stack-demo_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "Z:/c_code/C++/C++primer plus/chapter13/Cpp_Class/use_class"
 		}
 	],
 	"kind" : "cache",

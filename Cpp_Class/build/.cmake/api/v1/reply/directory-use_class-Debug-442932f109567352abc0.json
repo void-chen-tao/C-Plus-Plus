@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "Cpp_Class",
-		"source" : "Cpp_Class"
+		"build" : "use_class",
+		"source" : "use_class"
 	}
 }

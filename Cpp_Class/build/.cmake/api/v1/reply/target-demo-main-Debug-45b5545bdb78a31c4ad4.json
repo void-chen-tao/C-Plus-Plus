@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Cpp_Class/Cpp_Class.exe"
+			"path" : "use_class/demo-main.exe"
 		},
 		{
-			"path" : "Cpp_Class/Cpp_Class.pdb"
+			"path" : "use_class/demo-main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,11 +13,13 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
-			"Cpp_Class/CMakeLists.txt"
+			"use_class/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,7 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -41,6 +55,13 @@
 					"fragment" : "-g"
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "Z:/c_code/C++/C++primer plus/chapter13/Cpp_Class/use_class/demo_stack.h"
+				}
+			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
@@ -48,7 +69,14 @@
 			]
 		}
 	],
-	"id" : "Cpp_Class::@9bb0fd0074bf4a47ad3f",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "stack::@d26cb7589eea60324c1a"
+		}
+	],
+	"id" : "demo-main::@d26cb7589eea60324c1a",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -62,18 +90,23 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "libstack.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "Cpp_Class",
-	"nameOnDisk" : "Cpp_Class.exe",
+	"name" : "demo-main",
+	"nameOnDisk" : "demo-main.exe",
 	"paths" : 
 	{
-		"build" : "Cpp_Class",
-		"source" : "Cpp_Class"
+		"build" : "use_class",
+		"source" : "use_class"
 	},
 	"sourceGroups" : 
 	[
@@ -83,13 +116,6 @@
 			[
 				0
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1
-			]
 		}
 	],
 	"sources" : 
@@ -97,13 +123,8 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Cpp_Class/Cpp_Class.cpp",
+			"path" : "use_class/demo_stack_test.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Cpp_Class/Cpp_Class.h",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

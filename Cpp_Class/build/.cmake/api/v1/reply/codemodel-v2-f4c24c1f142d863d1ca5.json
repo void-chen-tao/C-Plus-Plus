@@ -19,18 +19,19 @@
 					"source" : "."
 				},
 				{
-					"build" : "Cpp_Class",
-					"jsonFile" : "directory-Cpp_Class-Debug-186b8225f3f87cf3b8f5.json",
+					"build" : "use_class",
+					"jsonFile" : "directory-use_class-Debug-442932f109567352abc0.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.8"
+						"string" : "3.5"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "Cpp_Class",
+					"projectIndex" : 1,
+					"source" : "use_class",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,15 +39,27 @@
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Cpp_Class"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "stack-demo",
+					"parentIndex" : 0,
+					"targetIndexes" : 
 					[
 						0,
 						1
-					],
-					"name" : "Cpp_Class",
-					"targetIndexes" : 
-					[
-						0
 					]
 				}
 			],
@@ -54,10 +67,17 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "Cpp_Class::@9bb0fd0074bf4a47ad3f",
-					"jsonFile" : "target-Cpp_Class-Debug-45f92196dd6faeb7efa8.json",
-					"name" : "Cpp_Class",
-					"projectIndex" : 0
+					"id" : "demo-main::@d26cb7589eea60324c1a",
+					"jsonFile" : "target-demo-main-Debug-45b5545bdb78a31c4ad4.json",
+					"name" : "demo-main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stack::@d26cb7589eea60324c1a",
+					"jsonFile" : "target-stack-Debug-75f5fb02b04e9ed09a81.json",
+					"name" : "stack",
+					"projectIndex" : 1
 				}
 			]
 		}
