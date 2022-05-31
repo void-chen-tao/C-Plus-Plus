@@ -44,7 +44,7 @@
  *      5，重载+、-、*、~，其中*有两种重载
  */
 #include <iostream>
-
+#include <string>
 class Complex
 {
 private:
@@ -54,6 +54,7 @@ public:
     //explicit Complex(double r = 0.0, double d = 0.0);
     Complex();
     Complex(double r, double d);
+    //Complex(const Complex& i);
     Complex(Complex& i);
     ~Complex();
     Complex& operator=(Complex& i);
@@ -64,6 +65,8 @@ public:
     Complex operator*(Complex& i);
     Complex operator*(int i); 
     Complex operator~();
+    std::string test();
+
     //  friend action
     friend std::ostream& operator<<(std::ostream& os, const Complex& m);
     friend bool operator>>(std::istream& is, Complex& m);

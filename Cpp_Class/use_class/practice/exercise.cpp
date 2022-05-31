@@ -1,5 +1,5 @@
 #include "exercise.h"
-
+#include <string>
 #ifdef SHOW_EXERCISE7_H
 
 Complex::Complex()
@@ -61,8 +61,7 @@ Complex Complex::operator*(int i)
 
 Complex Complex::operator~()
 {
-    Complex temp(real, -dummy);
-    return temp;
+    return Complex(real, -dummy);
 }
 
 std::ostream &operator<<(std::ostream &os, const Complex &m)
